@@ -18,18 +18,16 @@ body {
         width: 50%;
         padding-top: 5px;
 
-        h1 {
-            img {
-                border-radius: 50%;
-                transform: translate3d(
-                    -5%, 20%, 0px
-                );
-            }
-        }
+    }
+    .github-profile {
+        border-radius: 50%;
+        transform: translate3d(
+            -5%, 20%, 0px
+        );
+    }
 
-        .bg-music {
-            padding-top: 5%;
-        }
+    .bg-music {
+        padding-top: 5%;
     }
     .footer {
         color: #4e4e4e;
