@@ -6,12 +6,30 @@ body {
     
     font-family: "Roboto";
 
+
+    a {
+        color: #fe77aa;
+        text-decoration: none;
+    }
+
     .main-block {
         text-align: center;
         margin: auto;
         width: 50%;
-        padding-top: 10px;
-        
+        padding-top: 5px;
+
+        h1 {
+            img {
+                border-radius: 50%;
+                transform: translate3d(
+                    -5%, 20%, 0px
+                );
+            }
+        }
+
+        .bg-music {
+            padding-top: 5%;
+        }
     }
     .footer {
         color: #4e4e4e;
@@ -26,7 +44,7 @@ body {
         .footer-content {
             margin-left: 15px;
             margin-top: 10px;
-            text-align: left;
+            text-align: center;
         }
     }
 }
