@@ -1,22 +1,27 @@
 body {
+    --color-hyperlink: #fe77aa;
+    --color-hyperlink-hover: #ff9fcf;
+
+    
     color: #efefef;
     background-color: #2d2c2e;
     background-image: radial-gradient(circle at 1px 1px,#4c4c4c 1px, transparent 0);
     background-size: 50px 50px;
     
-    font-family: "Roboto";
-
-
+    font-family: "Helvetica";
     a {
-        color: #fe77aa;
+        color: var(--color-hyperlink);
         text-decoration: none;
+    }
+    a:hover {
+        color: var(--color-hyperlink-hover);
     }
 
     .main-block {
         text-align: center;
         margin: auto;
         width: 50%;
-        padding-top: 5px;
+        margin-top: 5px;
 
     }
     .github-profile {
@@ -27,7 +32,7 @@ body {
     }
 
     .bg-music {
-        padding-top: 5%;
+        margin-top: 5%;
     }
     .footer {
         color: #4e4e4e;
@@ -40,7 +45,6 @@ body {
         width: 100%;
 
         .footer-content {
-            margin-left: 15px;
             margin-top: 10px;
             text-align: center;
         }
