@@ -4,7 +4,7 @@ body {
 
     
     color: #efefef;
-    background-color: #2d2c2e;
+    background-color: #484749;
     background-image: radial-gradient(circle at 1px 1px,#4c4c4c 1px, transparent 0);
     background-size: 50px 50px;
     
@@ -31,22 +31,42 @@ body {
         );
     }
 
-    .bg-music {
-        margin-top: 5%;
+
+
+    @keyframes float {
+        0%, 100%  { transform: translateY(0px); }
+        50%  { transform: translateY(10px); }
+    }
+    
+    .altar-image {
+        user-select: none;    
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    
+        .altar-asset {
+            transform: translateY(30%);
+            animation: float 2s linear infinite alternate;
+        }
     }
     .footer {
-        color: #4e4e4e;
+        color: #ffffff;
+        background-image: url("assets/bedrock.png");
         background-color: #1d1c1e;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 5%;
+        position:fixed;
+        bottom: -32px;
+        left: -50%;
+        height: 64px;
         z-index: 10;
-        width: 100%;
+        width: 200%;
+
+        box-shadow: inset 0 0 2px 2px #ffffff57, 0 0 2vh #000000cc;
 
         .footer-content {
-            margin-top: 10px;
-            text-align: center;
+            height: 5%;
+            width:100%;
+            text-align:center;
         }
     }
 }
